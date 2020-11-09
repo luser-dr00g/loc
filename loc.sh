@@ -1,5 +1,5 @@
 #! /bin/sh
-#loc - strip blank lines and full line comments
+#loc.sh - strip blank lines and full line comments
 
 if [ $# -eq 0 ]
   then

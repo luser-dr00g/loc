@@ -1,5 +1,5 @@
 #! /bin/bash
-#loc2 - count lines after stripping blank lines and full-line comments
+#locc.sh - count lines after stripping blank lines and full-line comments
 
 total=0
 declare -a list
