@@ -1,11 +1,20 @@
 # loc
-simple shell scripts for stripping comments and counting lines of code
+Simple shell scripts for stripping comments and counting lines of code:
 
 
-$ loc.sh [files]
-print files or stdin, stripping comments and blank lines
+## Usage
+- If no filename is provided, loc/c will read from stdin
+### Strip comments and blank lines from input and write SLOC lines to stdout
+```
+$ loc.sh [FILE(s)]
+```
 
-$ locc.sh [files]
-count lines in files or stdin, after stripping comments and blank lines
 
-
+### Count lines of SLOC from input and write to stdout
+```
+$ locc.sh [FILE(s)]
+```
+To count sloc for a directory, use
+```
+$ find /path/to/dir/ -type f \( -name "*.EXT1" -o -name "*.EXT2" \) | xargs locc.sh
+```
