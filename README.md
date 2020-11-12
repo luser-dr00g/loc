@@ -16,5 +16,6 @@ $ locc.sh [FILE(s)]
 ```
 To count sloc for a directory, use
 ```
-$ find /path/to/dir/ -type f \( -name "*.EXT1" -o -name "*.EXT2" \) | xargs locc.sh
+$ locc.sh /path/to/dir/ PATTERN1 PATTERN2 ...
 ```
+where PATTERN can be any filename or wildcard expression
